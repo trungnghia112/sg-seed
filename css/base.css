@@ -50,7 +50,7 @@ a:focus { outline:0 none; }
 .tn-footer-full { width: 100%; margin: auto; }
 .tn-header,
 .tn-main,
-.tn-footer { position: relative; width: 1000px; margin: 0 auto; }
+.tn-footer { position: relative; width: 980px; margin: 0 auto; }
 /*====================================================================================
 ■03.All Page
 ====================================================================================*/
