@@ -24,27 +24,7 @@ else if(window.attachEvent) {
 	window.attachEvent("onload", smartRollover);
 }
 
-
-
 $(function() {
-	$("ul").find("li:first-child").addClass("first");
-	$("ul").find("li:last-child").addClass("last");
-	var maxHeight = 0;
-	function setHeight(column) {
-		//Get all the element with class = col
-		column = $(column);
-		//Loop all the column
-		column.each(function() {       
-			//Store the highest value
-			if($(this).height() > maxHeight) {
-				maxHeight = $(this).height();;
-			}
-		});
-		//Set the height
-		column.height(maxHeight);
-	}
-	setHeight('.colautoheight');
-
 	//set auto width or height for img
 	var tn_img_ratio=$(".tn_img_ratio-auto").width() / $(".tn_img_ratio-auto").height();
 	var tn_dv_ratio=$(".tn_dv_ratio-auto").width() / $(".tn_dv_ratio-auto").height();
