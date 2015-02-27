@@ -25,16 +25,18 @@ else if(window.attachEvent) {
 }
 
 $(function() {
-	//set auto width or height for img
-	var tn_img_ratio=$(".tn_img_ratio-auto").width() / $(".tn_img_ratio-auto").height();
-	var tn_dv_ratio=$(".tn_dv_ratio-auto").width() / $(".tn_dv_ratio-auto").height();
-	if(tn_img_ratio>=tn_dv_ratio){
-		$(".tn_img_ratio-auto").css('height','100%').css('width','auto');
-	}else{
-		$(".tn_img_ratio-auto").css('width','100%').css('height','auto');
-	}
-
-	var width_ul = 0;
-	$('.wrapMainNav > li').each(function(){ width_ul+= $(this).width(); });
-	$('.wrapMainNav').css("width",width_ul);
+	$('.tn_btn_maxheight').on('click',function(){
+		var mh_father = $(this).parent( ".tn_box_maxheight" )
+		if(mh_father.hasClass('open')){
+			mh_father.removeClass('open');
+			$(this).html('...続き&raquo;');
+		}else{
+			mh_father.addClass('open');
+			$(this).html('閉じる');
+		}		
+	});
+	$('.acco_box .acco_a').on("click",function(){
+		$(this).toggleClass('opened');
+		$(this).next('.acco_dv').slideToggle('slow');
+	});
 });

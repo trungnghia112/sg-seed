@@ -148,20 +148,33 @@ body { font-size:13px; font-family: "Meiryo","メイリオ","MS PGothic","MS P�
 /*====================================================================================
 ■05.USE MEDIA
 ====================================================================================*/
-.pull-left { float:left; }
-.pull-right { float:right; }
-.media, .media-body { overflow:hidden; }
-.media > .pull-left { margin-right:20px; }
-.media > .pull-right { margin-left:20px; }
-.media-text:after { clear: both; display: block; content: ""; height: 0px; visibility: hidden; }
+.media_txt .txt { }
+.media_txt .img { width: 40%; }
+.media_txt .img img { width:100%; height:auto }
+.pic_l .img { float:left; margin-right:10px; }
+.pic_r .img { float:right; margin-left:10px; }
 /*====================================================================================
 ■06.OTHER
 ====================================================================================*/
-.text-normal { font-weight:normal }
-.text-bold { font-weight:bold }
-.text-left { text-align:left }
-.text-right { text-align:right }
-.text-center { text-align:center }
+/* 主に新着情報への使用想定だが、通常コンテンツ内で使用も可 */
+.text_left { text-align:left }
+.text_right { text-align:right }
+.text_center { text-align:center }
+.text_justify { text-align:justify }
+.text_nowrap { white-space:nowrap }
+.text_lowercase { text-transform:lowercase }
+.text_uppercase { text-transform:uppercase }
+.text_capitalize { text-transform:capitalize }
+.text_muted { color:#777 }
+.text_normal { font-weight:normal !important; }
+.text_bold { font-weight:bold; }
+.text_red { color:#E75942; }
+.text_grey { color:#999999; }
+.text_pink { color:#FF1493; }
+.text_green { color:#39B221; }
+.text_blue { color:#3399FF; } /* このブルーはリンク色のブルーとは色味を若干変える事を推奨 */
+.text_yellow { color:#EECC00; }
+.text_white { color:#F0F0F0; }
 /*====================================================================================
 ■07.PAGE UP
 ====================================================================================*/
